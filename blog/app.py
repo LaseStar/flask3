@@ -1,4 +1,7 @@
+import os
+
 from flask import Flask
+from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
 from blog.article.views import article
@@ -11,10 +14,12 @@ from blog.views.auth import login_manager
 
 def create_app() -> Flask:
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "abcdefg123456"
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////blog.sqlite"
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+    cfg_name = os.environ.get("CONFIG_NAME") or "ProductionConfig"
+    app.config.from_object(f"blog.configs.{cfg_name}")
+
     db.init_app(app)
+    migrate = Migrate(app, db)
     login_manager.init_app(app)
 
     register_blueprint(app)

@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcf2e914-597c-4ab8-b9f4-8c6301f6b2bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/auth/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/models/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/views/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/flask3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flask3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/configs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19128323-9a7f-49db-b818-fa5129b27545.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fc8f997f-67a8-4c34-ab70-824b41ed5756.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fc8f997f-67a8-4c34-ab70-824b41ed5756.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/users/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/users/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/users/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/users/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models/user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_2" />
+        <entry key="$PROJECT_DIR$" value="lesson_3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,26 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Lenovo/OneDrive/Рабочий стол/GIT/flask3/blog/templates/auth",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/OneDrive/Рабочий стол/GIT/flask3&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\OneDrive\Рабочий стол\GIT\flask3" />
       <recent name="C:\Users\Lenovo\OneDrive\Рабочий стол\GIT\flask3\blog\templates\auth" />
       <recent name="C:\Users\Lenovo\OneDrive\Рабочий стол\GIT\flask3\blog\templates\articles" />
       <recent name="C:\Users\Lenovo\OneDrive\Рабочий стол\GIT\flask3\blog\article" />
@@ -172,7 +167,11 @@
       <workItem from="1673359498973" duration="3224000" />
       <workItem from="1673439111797" duration="1217000" />
       <workItem from="1673440348296" duration="1194000" />
-      <workItem from="1673522353411" duration="5419000" />
+      <workItem from="1673522353411" duration="5670000" />
+      <workItem from="1673607098460" duration="1468000" />
+      <workItem from="1673793934491" duration="489000" />
+      <workItem from="1673794534950" duration="1320000" />
+      <workItem from="1673796294961" duration="313000" />
     </task>
     <servers />
   </component>
@@ -204,6 +203,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask3$flask3.coverage" NAME="flask3 Coverage Results" MODIFIED="1673439125427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask3$database.coverage" NAME="database Coverage Results" MODIFIED="1673440041324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blog/models" />
-    <SUITE FILE_PATH="coverage/flask3$Flask__wsgi_py_.coverage" NAME="Flask (wsgi.py) Coverage Results" MODIFIED="1673528364305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask3$Flask__wsgi_py_.coverage" NAME="Flask (wsgi.py) Coverage Results" MODIFIED="1673794196915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
