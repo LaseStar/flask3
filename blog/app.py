@@ -6,6 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 from blog.article.views import article
 from blog.auth.views import auth_app
+from blog.security import flask_bcrypt
 from blog.user.views import users_app
 
 from blog.models.database import db
@@ -21,7 +22,7 @@ def create_app() -> Flask:
     db.init_app(app)
     migrate = Migrate(app, db)
     login_manager.init_app(app)
-
+    flask_bcrypt.init_app(app)
     register_blueprint(app)
     return app
 
