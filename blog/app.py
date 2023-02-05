@@ -11,6 +11,7 @@ from blog.user.views import users_app
 
 from blog.models.database import db
 from blog.views.auth import login_manager
+from blog.views.authors import authors_app
 
 
 def create_app() -> Flask:
@@ -31,3 +32,4 @@ def register_blueprint(app: Flask):
     app.register_blueprint(users_app)
     app.register_blueprint(article)
     app.register_blueprint(auth_app, url_prefix="/auth")
+    app.register_blueprint(authors_app, url_prefix="/authors")
