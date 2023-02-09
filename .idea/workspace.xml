@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcf2e914-597c-4ab8-b9f4-8c6301f6b2bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/forms/article.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/models/article.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/models/author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/articles/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/authors/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/views/articles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/views/authors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/models/article_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/models/tag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2373176b-8c84-4196-aae4-01c5fbbccd50.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2373176b-8c84-4196-aae4-01c5fbbccd50.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/forms/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms/article.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models/article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/articles/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/articles/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/articles/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/articles/details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/articles/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/articles/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/articles.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/articles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson_5" />
+        <entry key="$PROJECT_DIR$" value="lesson_6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,6 +175,7 @@
       <workItem from="1673852338192" duration="119000" />
       <workItem from="1675351830441" duration="3608000" />
       <workItem from="1675610209489" duration="3386000" />
+      <workItem from="1675947501181" duration="2579000" />
     </task>
     <servers />
   </component>
@@ -209,6 +207,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask3$flask3.coverage" NAME="flask3 Coverage Results" MODIFIED="1673439125427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask3$database.coverage" NAME="database Coverage Results" MODIFIED="1673440041324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/blog/models" />
-    <SUITE FILE_PATH="coverage/flask3$Flask__wsgi_py_.coverage" NAME="Flask (wsgi.py) Coverage Results" MODIFIED="1673852370606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask3$Flask__wsgi_py_.coverage" NAME="Flask (wsgi.py) Coverage Results" MODIFIED="1675951338444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

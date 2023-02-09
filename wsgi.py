@@ -1,6 +1,7 @@
 import os
 
 from blog.app import create_app
+from blog.models.database import db
 
 app = create_app()
 
@@ -54,3 +55,22 @@ def create_users():
     db.session.commit()
 
     print('done! created users:', admin, james)
+
+@app.cli.command("careate-tags")
+def create_tags():
+    """
+    Run in your terminal:
+    -> flask create-tags
+    """
+    from blog.models import Tag
+    for name in [
+        "flask",
+        "django",
+        "python",
+        "sqlalchemy",
+        "news",
+    ]:
+        tag = Tag(name=name)
+        db.session.add(tag)
+    db.session.commit()
+    print("created tags")
