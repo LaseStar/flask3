@@ -4,6 +4,7 @@ from flask import Flask
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
+from blog import admin
 from blog.article.views import article
 from blog.auth.views import auth_app
 from blog.security import flask_bcrypt
@@ -19,6 +20,8 @@ def create_app() -> Flask:
 
     cfg_name = os.environ.get("CONFIG_NAME") or "ProductionConfig"
     app.config.from_object(f"blog.configs.{cfg_name}")
+
+    admin.init_app(app)
 
     db.init_app(app)
     migrate = Migrate(app, db)

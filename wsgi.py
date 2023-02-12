@@ -1,5 +1,4 @@
 import os
-
 from blog.app import create_app
 from blog.models.database import db
 
