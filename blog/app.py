@@ -4,7 +4,7 @@ from flask import Flask
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-from blog import admin
+from blog import admin, api
 from blog.article.views import article
 from blog.auth.views import auth_app
 from blog.security import flask_bcrypt
@@ -28,7 +28,12 @@ def create_app() -> Flask:
     login_manager.init_app(app)
     flask_bcrypt.init_app(app)
     register_blueprint(app)
+    register_api(app)
     return app
+
+
+def register_api(app: Flask):
+    api.init_api(app)
 
 
 def register_blueprint(app: Flask):
