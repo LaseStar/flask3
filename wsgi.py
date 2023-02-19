@@ -23,7 +23,7 @@ def create_admin():
     ➜ flask create-admin
     > created admin: <User #1 'admin'>
     """
-    from blog.models import User
+    from blog.models.user import User
     from blog.models.database import db
 
     admin = User(username='admin', is_staff=True)
@@ -43,7 +43,7 @@ def create_users():
     > done! created users: <User #1 'admin'> <User #2 'james'>
     """
 
-    from blog.models import User
+    from blog.models.user import User
     from blog.models.database import db
 
     admin = User(username='admin', is_staff=True)
@@ -55,13 +55,14 @@ def create_users():
 
     print('done! created users:', admin, james)
 
+
 @app.cli.command("careate-tags")
 def create_tags():
     """
     Run in your terminal:
     -> flask create-tags
     """
-    from blog.models import Tag
+    from blog.models.tag import Tag
     for name in [
         "flask",
         "django",
